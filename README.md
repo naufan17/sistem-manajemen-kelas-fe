@@ -12,6 +12,10 @@ npm install
 npx dotenv-vault@latest pull
 ```
 - OR Rename .env.example to .env and fill in the section that must be filled
+- Build the project
+```
+npm run build
+```
 - Run this command to start the server:
 ```
 npm run dev
