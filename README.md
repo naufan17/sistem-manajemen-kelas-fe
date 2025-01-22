@@ -16,3 +16,8 @@ npx dotenv-vault@latest pull
 ```
 npm run dev
 ```
+-- OR
+```
+npm run preview
+```
+
