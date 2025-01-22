@@ -1,13 +1,20 @@
-import './App.css'
+import React from 'react'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { Provider } from 'react-redux'
+import { store } from './store'
 
-function App() {
-
+const App: React.FC = () => {
   return (
-    <>
-      <div>
-        <h1>Sistem Manajemen Kelas</h1>
-      </div>
-    </>
+    <Router>
+      <Provider store={store}>
+        <Routes>
+          <Route 
+            path="/" 
+            element={<h1>Home</h1>} 
+          />
+        </Routes>
+      </Provider>
+    </Router>
   )
 }
 
